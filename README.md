@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @BougieTech
 - 👀 I’m interested in UX Design, Data Analytics, and Esports
 - 🌱 I’m currently learning Javascript, Python, and R.
-- 💞️ I’m looking to collaborate on large data bases projects 
+- 💞️ I’m looking to collaborate on large data projects 
 - 📫 How to reach me ...
 
 <!---
