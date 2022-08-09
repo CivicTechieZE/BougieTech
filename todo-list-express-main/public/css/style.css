@@ -1,0 +1,7 @@
+h1{ /* selects any h1 tage in the EJS file */
+    color: red; /*changes the text color to red */
+} /* closes the selector */
+.completed{ /* targets any item with a class of completed*/
+    color: gray; /* changes the text color to gray*/
+    text-decoration: line-through; /* apples strikethought styling to the text*/
+} /* closes the selector*/

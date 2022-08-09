@@ -1,0 +1,47 @@
+<!DOCTYPE html> <!--tells the broswer what type of document will it will be running-->
+<html lang="en"> <!--states the lanaguage of the document is English-->
+<head> <!-- starts the head tag to store the meta data-->
+    <meta charset="UTF-8"> <!-- declares character encoding/indicates what character set should be used-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--sets appropriate compataiblity for Microsoft broswers  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--sets the width of availabe viewing area to the width of the device screen-->
+    <title>Document</title> <!--assigns a title that appears on the browser tab-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!--creates a link to the Font Awesome Icon library-->
+    <link rel="stylesheet" href="css/style.css"> <!--creates a link to the local style sheet in the public folder-->
+</head> <!--closes the heading tag-->
+<body> <!--Main section for content displayed--> 
+    <!DOCTYPE html> <!--May be a typo-->
+<html lang="en"><!--May be a typo-->
+<head><!--May be a typo-->
+    <meta charset="UTF-8"><!--May be a typo-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--may be a typo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--may be a typo-->
+    <title>Document</title><!--May be a typo-->
+</head><!--May be a typo-->
+<body><!--May be a typo-->
+    <h1>Todo List: </h1> <!--Main heading/title displayed on page-->
+    <ul class="todoItems"> <!--Unlisted class, creates an unordered list and assigns a class to the list-->
+    <% for(let i=0; i < items.length; i++) {%> <!--Uses EJS to start a FOR loop-->
+        <li class="item"> <!--Creates a list item and assigns it a class of "item"-->
+            <% if(items[i].completed === true) {%> <!--if it's complted or not flagged, EJS checks if any itme in an arry with a completed property is true-->
+                <span class='completed'><%= items[i].thing %></span> <!--Creates an inline elemetn with a class and adding EJS to display the name of the task-->
+            <% }else{ %> <!--EJS for the "else" clause of our "if"statement-->
+                <span><%= items[i].thing %></span> <!--Adding EJS to display the name of the task with no class-->
+            <% } %>    <!--EJS to close "else" statement-->
+            <span class='fa fa-trash'></span> <!--Display font awesome icon of trash can inside a span-->
+        </li> <!--Closes the list item-->
+    <% } %> <!--EJS to close the FOR loop-->
+    </ul> <!--Closes the unordered list-->
+
+    <h2>Left to do: <%= left %></h2> <!--creates a second level heading tag with text and uses EJS to display a variable showing how many tasks are left to complete-->
+
+    <h2>Add A Todo:</h2> <!--creates a second level header-->
+
+    <form action="/addTodo" method="POST"> <!--creates a form with a POST method that goes to the /add Todo route-->
+        <input type="text" placeholder="Thing To Do" name="todoItem"> <!--creates an input box that accepts text with a default text inside of the textbox-->
+        <input type="submit"> <!--gives the form a submit button-->
+    </form> <!--closes the form -->
+    
+
+    <script src='js/main.js'></script> <!--links to the main js folder in the public folder-->
+</body> <!--closes the body tag-->
+</html> <!--closes the head tag-->
