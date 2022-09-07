@@ -9,7 +9,7 @@
 
 - 💬 Ask me about **market research and  data analytics**
 
-- 📫 How to reach me at **starlow18@gmail.com**
+- 📫 You can reach me at **starlow18@gmail.com**
 
 - ⚡ Fun fact **I enjoy playing video games**
 
