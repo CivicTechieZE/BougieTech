@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Xena English</h1>
 <h3 align="center">A passionate frontend developer from the United States</h3>
 
-- 🔭 I’m currently working on **internet broadband data**
+- 🔭 I’m currently working on **public data and AI intergration**
 
 - 🌱 I’m currently learning **SQL and Python**
 
